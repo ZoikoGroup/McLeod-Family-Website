@@ -8,6 +8,7 @@
 @theme inline {
   --font-sans: var(--font-public-sans);
   --font-serif: var(--font-sorts-mill-goudy);
+  --font-archivo: var(--font-archivo-sans);
 
   --color-dune: #34322e;
   --color-kumera: #7f6127;
@@ -21,6 +22,13 @@
   --color-te-papa-green: #23463a;
   --color-foggy-gray: #c9c2b2;
   --color-celtic: #142a22;
+
+  /* Header */
+  --color-ebony: #161d27;
+  --color-mirage: #172130;
+  --color-gray-mid: #7f7f7f;
+  --color-sand: #b89c63;
+  --color-linen: #f4f0e8;
 }
 
 body {

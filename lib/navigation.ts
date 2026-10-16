@@ -1,43 +1,49 @@
-export type NavMenuItem = {
-  label: string;
-  /** Description lines, one per rendered line (Figma line breaks). */
-  description: string[];
-  icon: string;
-  /** No href = shown as unavailable (dashed icon, muted text, no arrow). */
-  href?: string;
-};
+export type NavIcon = "office" | "activities" | "stewardship" | "governance" | "verification";
+
+export type NavMenuItem = { label: string; href: string };
 
 export type NavLink = {
   label: string;
   href: string;
-  menu?: { title: string; items: NavMenuItem[] };
+  menu?: { title: string; icon: NavIcon; items: NavMenuItem[] };
 };
 
 export const navLinks: NavLink[] = [
   {
-    label: "About",
+    label: "The Office",
     href: "/about",
     menu: {
-      title: "Family Office",
+      title: "The Office",
+      icon: "office",
+      items: [
+        { label: "About McLeod", href: "/about" },
+        { label: "Our Purpose & Mandate", href: "/about/purpose-and-mandate" },
+        { label: "Vision, Mission & Values", href: "/about/vision-mission-values" },
+        { label: "Our Institutional Role", href: "/about/institutional-role" },
+        { label: "Independence & Discretion", href: "/about/independence-and-discretion" },
+      ],
+    },
+  },
+  {
+    label: "Our Activities",
+    href: "/activities",
+    menu: {
+      title: "Our Activities",
+      icon: "activities",
       items: [
         {
-          label: "About the Office",
-          description: ["Purpose, role and public perimeter"],
-          icon: "/images/nav-about-office.svg",
-          href: "/about",
+          label: "Strategic Ownership & Enterprise Interests",
+          href: "/activities/strategic-ownership",
         },
+        { label: "Capital & Investments", href: "/activities/capital-and-investments" },
+        { label: "Treasury & Liquidity", href: "/activities/treasury-and-liquidity" },
+        { label: "Real Assets & Private Holdings", href: "/activities/real-assets" },
+        { label: "Trust, Estate & Tax Coordination", href: "/activities/trust-estate-and-tax" },
         {
-          label: "Entity of Record",
-          description: ["Legal identity and public registry", "particulars"],
-          icon: "/images/nav-about-entity.svg",
-          href: "/about/entity-of-record",
+          label: "Family Administration & Reporting",
+          href: "/activities/family-administration",
         },
-        {
-          label: "Purpose & Perimeter",
-          description: ["What the Office is — and is not"],
-          icon: "/images/nav-about-perimeter.svg",
-          href: "/about/purpose-and-perimeter",
-        },
+        { label: "Philanthropy & Legacy", href: "/activities/philanthropy-and-legacy" },
       ],
     },
   },
@@ -46,25 +52,13 @@ export const navLinks: NavLink[] = [
     href: "/stewardship",
     menu: {
       title: "Stewardship",
+      icon: "stewardship",
       items: [
-        {
-          label: "Enterprise",
-          description: ["Long-term ownership and oversight"],
-          icon: "/images/nav-stewardship-enterprise.svg",
-          href: "/stewardship/enterprise",
-        },
-        {
-          label: "Capital",
-          description: ["Allocation, liquidity and risk", "discipline"],
-          icon: "/images/nav-stewardship-capital.svg",
-          href: "/stewardship/capital",
-        },
-        {
-          label: "Continuity",
-          description: ["Succession and transfer of", "responsibility"],
-          icon: "/images/nav-stewardship-continuity.svg",
-          href: "/stewardship/continuity",
-        },
+        { label: "Our Stewardship Philosophy", href: "/stewardship" },
+        { label: "Long-Term Value Creation", href: "/stewardship/long-term-value-creation" },
+        { label: "Capital Preservation", href: "/stewardship/capital-preservation" },
+        { label: "Responsible Ownership", href: "/stewardship/responsible-ownership" },
+        { label: "Generational Stewardship", href: "/stewardship/generational-stewardship" },
       ],
     },
   },
@@ -73,24 +67,15 @@ export const navLinks: NavLink[] = [
     href: "/governance",
     menu: {
       title: "Governance",
+      icon: "governance",
       items: [
+        { label: "Our Governance Principles", href: "/governance" },
+        { label: "Family Governance", href: "/governance/family-governance" },
+        { label: "Institutional Oversight", href: "/governance/institutional-oversight" },
+        { label: "Succession & Continuity", href: "/governance/succession-and-continuity" },
         {
-          label: "Governance Principles",
-          description: ["The Office’s public operating", "principles"],
-          icon: "/images/nav-governance-principles.svg",
-          href: "/governance",
-        },
-        {
-          label: "Decision Rights & Controls",
-          description: ["How authority is defined and", "recorded"],
-          icon: "/images/nav-governance-decision-rights.svg",
-          href: "/governance/decision-rights",
-        },
-        {
-          label: "Confidentiality & Security",
-          description: ["Controlled disclosure and secure", "engagement"],
-          icon: "/images/nav-governance-confidentiality.svg",
-          href: "/governance/confidentiality",
+          label: "Confidentiality & Integrity",
+          href: "/governance/confidentiality-and-integrity",
         },
       ],
     },
@@ -100,30 +85,13 @@ export const navLinks: NavLink[] = [
     href: "/verification",
     menu: {
       title: "Verification",
+      icon: "verification",
       items: [
-        {
-          label: "Verification Centre",
-          description: ["Confirm official McLeod digital properties"],
-          icon: "/images/nav-verification-centre.svg",
-          href: "/verification",
-        },
-        {
-          label: "Correspondence Domains",
-          description: ["Official sending domains and authentication", "guidance"],
-          icon: "/images/nav-verification-correspondence.svg",
-          href: "/verification/official-domains",
-        },
-        {
-          label: "Payment & Bank Detail Protocol",
-          description: ["Independent verification of new or changed", "instructions"],
-          icon: "/images/nav-verification-payment.svg",
-          href: "/verification/payment-protocol",
-        },
-        {
-          label: "Report Suspicious Communication",
-          description: ["Available only when the monitored route is live"],
-          icon: "/images/nav-verification-report.svg",
-        },
+        { label: "Verify a Communication", href: "/verification" },
+        { label: "Official Domains & Channels", href: "/verification/official-domains" },
+        { label: "Payment & Instruction Security", href: "/verification/payment-security" },
+        { label: "Fraud & Impersonation Awareness", href: "/verification/fraud-awareness" },
+        { label: "Report Suspicious Activity", href: "/verification/report" },
       ],
     },
   },

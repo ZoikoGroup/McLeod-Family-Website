@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { contactLink, topBarLinks } from "@/lib/navigation";
-import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
 import NavPrimary from "./NavPrimary";
 
@@ -34,43 +33,35 @@ export default function Header() {
         </div>
       </div>
 
-      <header className="relative border-b border-twine/25 bg-timber-green lg:sticky lg:top-0 lg:z-40 lg:border-swirl lg:bg-spring-wood lg:px-8">
-        {/* Mobile bar */}
-        <div className="flex h-[72px] items-center justify-between gap-[31.4px] pl-6 lg:hidden">
+      <header className="relative border-b border-swirl bg-linen lg:sticky lg:top-0 lg:z-40">
+        <div className="mx-auto flex h-[72px] w-full max-w-[1440px] items-center justify-between gap-6 px-6 lg:h-20 xl:px-10">
           <Link
             href="/"
             aria-label="McLeod Family Office, home"
-            className="flex min-h-11 shrink-0 items-center gap-[18px]"
+            className="flex min-h-11 shrink-0 items-center"
           >
             <Image
-              src="/images/mcleod-family-office-logo-gold.webp"
+              src="/images/mcleod-family-office-logo-primary.webp"
               alt=""
-              width={164}
-              height={46}
+              width={158}
+              height={51}
               priority
-              className="h-[46.03px] w-[164px]"
+              className="h-auto w-[140px] lg:w-[158px]"
             />
-            <span aria-hidden="true" className="h-7 w-px bg-twine/45" />
-            <span className="text-[12px] leading-[14.4px] tracking-[1.68px] text-twine uppercase">
-              Family
-              <br />
-              Office
-            </span>
           </Link>
-          <MobileMenu />
-        </div>
 
-        {/* Desktop bar */}
-        <div className="mx-auto hidden h-[75px] w-full max-w-[1147px] items-center justify-between gap-6 lg:flex">
-          <Logo />
+          <div className="lg:hidden">
+            <MobileMenu />
+          </div>
 
-          <div className="flex h-full items-center gap-7">
+          <div className="hidden h-full items-center gap-6 lg:flex xl:gap-8">
             <NavPrimary />
             <Link
               href={contactLink.href}
-              className="flex min-h-11 shrink-0 items-center justify-center border border-twine bg-twine px-6 py-[11px] text-[14px] leading-5 font-semibold whitespace-nowrap text-timber-green"
+              className="flex min-h-11 shrink-0 items-center justify-center gap-2.5 border border-twine bg-twine px-6 py-3.5 font-sans text-sm leading-4 font-medium whitespace-nowrap text-ebony"
             >
-              {contactLink.label}&nbsp;<span className="font-normal">→</span>
+              {contactLink.label}
+              <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
