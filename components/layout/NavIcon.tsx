@@ -4,61 +4,89 @@ const paths: Record<NavIconName, React.ReactNode> = {
   // Columned building
   office: (
     <>
-      <path d="M3 7 12 2.5 21 7H3Z" />
-      <path d="M5 9.5v9M9 9.5v9M15 9.5v9M19 9.5v9" />
-      <path d="M2 21h20" />
+      <path d="M2 7 12 2 22 7H2Z" />
+      <path d="M4 9v10M9 9v10M15 9v10M20 9v10" />
+      <path d="M2 20h20M2 22h20" />
     </>
   ),
-  // Ascending bars
+  // Crossed tools
   activities: (
     <>
-      <path d="M5 20v-8h3.5v8" />
-      <path d="M10.25 20V8h3.5v12" />
-      <path d="M15.5 20V4H19v16" />
-      <path d="M3 20h18" />
+      <path d="M5 19 15 9" />
+      <path d="M13.5 4.5a3.5 3.5 0 0 0 5 5L21 7l-4-4-3.5 1.5Z" />
+      <path d="M19 19 9 9" />
+      <path d="M7.5 4.5 5 3 3 5l1.5 2.5L7 8l1-1-.5-2.5Z" />
     </>
   ),
   // Sprout
   stewardship: (
     <>
-      <path d="M12 21v-9" />
-      <path d="M12 12c0-3.5-2.25-5.5-5.5-5.5 0 3.5 2.25 5.5 5.5 5.5Z" />
-      <path d="M12 12c0-3.5 2.25-5.5 5.5-5.5 0 3.5-2.25 5.5-5.5 5.5Z" />
-      <path d="M6 21h12" />
+      <path d="M12 22v-10" />
+      <path d="M12 12c-2.2 0-3.5-1.6-3.5-4.2S9.8 3 12 3" />
+      <path d="M12 12c2.2 0 3.5-1.6 3.5-4.2S14.2 3 12 3" />
+      <path d="M8.5 22h7" />
     </>
   ),
   // Scales
   governance: (
     <>
       <path d="M12 3v18" />
-      <path d="M7 21h10" />
-      <path d="M5 6h14" />
-      <path d="M5 6 2.5 13a3 3 0 0 0 5 0L5 6Z" />
-      <path d="M19 6l-2.5 7a3 3 0 0 0 5 0L19 6Z" />
+      <path d="M3 21h18" />
+      <path d="M8 6h8" />
+      <path d="M8 6 5 15h6L8 6Z" />
+      <path d="M16 6l-3 9h6l-3-9Z" />
     </>
   ),
   // Shield with check
   verification: (
     <>
-      <path d="M12 2.5 4.5 5.5v6c0 4.6 3.1 8.4 7.5 10 4.4-1.6 7.5-5.4 7.5-10v-6L12 2.5Z" />
+      <path d="M12 2 4 5v6.5c0 4.8 3.4 8.8 8 10.5 4.6-1.7 8-5.7 8-10.5V5l-8-3Z" />
       <path d="m9 12 2 2 4-4" />
+    </>
+  ),
+  // Page with folded corner
+  document: (
+    <>
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z" />
+      <path d="M14 2v6h6M8 13h8M8 17h8M8 9h2" />
+    </>
+  ),
+  // Envelope
+  mail: (
+    <>
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="m2 7 10 6 10-6" />
+    </>
+  ),
+  // Map pin
+  pin: (
+    <>
+      <path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z" />
+      <circle cx="12" cy="10" r="2.5" />
     </>
   ),
 };
 
-export default function NavIcon({ name }: { name: NavIconName }) {
+type Props = {
+  name: NavIconName;
+  /** Rendered size in px; the stroke stays 1.2px at any size. */
+  size?: 20 | 32;
+  className?: string;
+};
+
+export default function NavIcon({ name, size = 32, className = "text-bronze" }: Props) {
   return (
     <svg
       aria-hidden="true"
-      width="24"
-      height="24"
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.2"
+      strokeWidth={(1.2 * 24) / size}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="size-6 shrink-0 text-sand"
+      className={`shrink-0 ${className}`}
     >
       {paths[name]}
     </svg>

@@ -1,4 +1,12 @@
-export type NavIcon = "office" | "activities" | "stewardship" | "governance" | "verification";
+export type NavIcon =
+  | "office"
+  | "activities"
+  | "stewardship"
+  | "governance"
+  | "verification"
+  | "document"
+  | "mail"
+  | "pin";
 
 export type NavMenuItem = { label: string; href: string };
 
@@ -99,105 +107,67 @@ export const navLinks: NavLink[] = [
 
 export const contactLink = { label: "Contact the Office", href: "/contact" };
 
-export const footerCtas = [
-  {
-    eyebrow: "Institutional enquiries",
-    label: "Contact the Office",
-    href: "/contact",
-    icon: "/images/mail.svg",
-  },
-  {
-    eyebrow: "Official verification",
-    label: "Verify before you act",
-    href: "/verification",
-    icon: "/images/shield-check.svg",
-  },
-];
-
-export const footerColumns = [
-  {
-    title: "Office",
-    links: [
-      { label: "About the Office", href: "/about" },
-      { label: "Mandate", href: "/about/mandate" },
-      { label: "Entity of Record", href: "/about/entity-of-record" },
-    ],
-  },
-  {
-    title: "Stewardship",
-    links: [
-      { label: "Enterprise", href: "/stewardship/enterprise" },
-      { label: "Capital", href: "/stewardship/capital" },
-      { label: "Continuity", href: "/stewardship/continuity" },
-    ],
-  },
-  {
-    title: "Governance",
-    links: [
-      { label: "Governance principles", href: "/governance" },
-      { label: "Decision rights", href: "/governance/decision-rights" },
-      { label: "Confidentiality", href: "/governance/confidentiality" },
-    ],
-  },
-  {
-    title: "Verification",
-    links: [
-      { label: "Verification Centre", href: "/verification" },
-      { label: "Official domains", href: "/verification/official-domains" },
-      { label: "Security guidance", href: "/verification/security-guidance" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Accessibility", href: "/accessibility" },
-      { label: "Security", href: "/security" },
-      { label: "Privacy notice", href: "/privacy" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Legal notices", href: "/legal" },
-      { label: "Terms of use", href: "/terms" },
-    ],
-  },
-];
-
-export const footerOffices = [
-  { title: ["Headquarters"], lines: ["Sacramento", "California", "United States"] },
-  {
-    title: ["European", "Headquarters"],
-    lines: ["167–169 Great", "Portland Street", "5th Floor", "London W1W 5PF", "United Kingdom"],
-  },
-];
-
-export const socialLinks = [
-  { label: "McLeod Family Office on Facebook", href: "#", text: "f" },
-  { label: "McLeod Family Office on Instagram", href: "#", icon: "/images/instagram.svg" },
-  { label: "McLeod Family Office on YouTube", href: "#", icon: "/images/youtube.svg" },
-  { label: "McLeod Family Office on LinkedIn", href: "#", text: "in" },
-  { label: "McLeod Family Office on X (Twitter)", href: "#", text: "X" },
-];
-
-export const legalLinks = [
-  { label: "Privacy notice", href: "/privacy" },
-  { label: "Security", href: "/security" },
-  { label: "Accessibility", href: "/accessibility" },
-  { label: "Terms of use", href: "/terms" },
-];
-
 export const topBarLinks = [
   { label: "Verified communications", href: "/verification" },
   { label: "Security", href: "/security" },
   { label: "Contact", href: "/contact" },
 ];
 
-export const officialRoutes = [
-  { label: "Verification", href: "/verification" },
-  { label: "Contact", href: "/contact" },
-  { label: "Privacy notice", href: "/privacy" },
-  { label: "Security", href: "/security" },
+export type FooterGroup = { title: string; icon: NavIcon; items: NavMenuItem[] };
+
+export const footerGroups: FooterGroup[] = [
+  {
+    title: "Resources",
+    icon: "document",
+    items: [
+      { label: "Institutional Overview", href: "/about" },
+      { label: "Stewardship Principles", href: "/stewardship" },
+      { label: "Verification Guidance", href: "/verification" },
+      { label: "Legal Notices", href: "/legal" },
+      { label: "Sitemap", href: "/sitemap" },
+    ],
+  },
+  {
+    title: "Contact",
+    icon: "mail",
+    items: [
+      { label: "Contact the Office", href: "/contact" },
+      { label: "Verify a Communication", href: "/verification" },
+      { label: "Official Communication Channels", href: "/verification/official-domains" },
+      { label: "Report Suspicious Activity", href: "/verification/report" },
+    ],
+  },
+  {
+    title: "Legal",
+    icon: "document",
+    items: [
+      { label: "Legal Notices", href: "/legal" },
+      { label: "Privacy Notice", href: "/privacy" },
+      { label: "Website Terms", href: "/terms" },
+      { label: "Cookie Notice", href: "/cookies" },
+      { label: "Cookie Preferences", href: "/cookie-preferences" },
+      { label: "Accessibility Statement", href: "/accessibility" },
+    ],
+  },
+];
+
+export const footerOffices = [
+  { title: "Headquarters", lines: ["Sacramento, California", "United States"] },
+  {
+    title: "European Headquarters",
+    lines: ["167–169 Great Portland Street 5th Floor", "London W1W 5PF United Kingdom"],
+  },
+];
+
+export const socialLinks = [
+  { label: "McLeod Family Office on LinkedIn", href: "#", icon: "linkedin" },
+  { label: "McLeod Family Office on X", href: "#", icon: "x" },
+] as const;
+
+export const legalLinks = [
+  { label: "Privacy Notice", href: "/privacy" },
+  { label: "Website Terms", href: "/terms" },
+  { label: "Cookie Preferences", href: "/cookie-preferences" },
   { label: "Accessibility", href: "/accessibility" },
-  { label: "Terms of use", href: "/terms" },
+  { label: "Legal Notices", href: "/legal" },
 ];

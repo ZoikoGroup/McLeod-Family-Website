@@ -18,7 +18,7 @@ export default function NavPrimary() {
               href={link.href}
               aria-current={active ? "page" : undefined}
               className={`flex min-h-11 items-center gap-1 py-3 font-archivo text-[15px] leading-6 font-medium whitespace-nowrap xl:text-base ${
-                active ? "text-sand" : "text-ebony"
+                active ? "text-twine" : "text-white"
               }`}
             >
               {link.label}
@@ -31,7 +31,7 @@ export default function NavPrimary() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.4"
-                  className="size-2.5 shrink-0 transition-transform group-hover:rotate-180"
+                  className="size-2.5 shrink-0 text-porcelain transition-transform group-hover:rotate-180"
                 >
                   <path d="M2 3.5 5 6.5 8 3.5" />
                 </svg>
