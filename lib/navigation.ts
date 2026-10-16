@@ -108,10 +108,10 @@ export const navLinks: NavLink[] = [
 export const contactLink = { label: "Contact the Office", href: "/contact" };
 
 export const topBarLinks = [
-  { label: "Verified communications", href: "/verification" },
-  { label: "Security", href: "/security" },
-  { label: "Contact", href: "/contact" },
-];
+  { label: "Verify this site", href: "/verification", icon: "shield-check", arrow: true },
+  { label: "Security", href: "/security", icon: "lock" },
+  { label: "Contact", href: "/contact", icon: "phone" },
+] as const;
 
 export type FooterGroup = { title: string; icon: NavIcon; items: NavMenuItem[] };
 
