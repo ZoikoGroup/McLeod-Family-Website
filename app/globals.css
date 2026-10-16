@@ -8,6 +8,7 @@
 @theme inline {
   --font-sans: var(--font-public-sans);
   --font-serif: var(--font-sorts-mill-goudy);
+  --font-archivo: var(--font-archivo-sans);
 
   --color-dune: #34322e;
   --color-kumera: #7f6127;
@@ -21,6 +22,15 @@
   --color-te-papa-green: #23463a;
   --color-foggy-gray: #c9c2b2;
   --color-celtic: #142a22;
+
+  /* Header */
+  --color-ebony: #161d27;
+  --color-mirage: #172130;
+  --color-gray-mid: #7f7f7f;
+  --color-bronze: #8b6d45;
+  --color-mist: #d9d9db;
+  --color-cloud: #e9eaeb;
+  --color-porcelain: #f6f3ee;
 }
 
 body {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Public_Sans, Sorts_Mill_Goudy } from "next/font/google";
+import { Archivo, Public_Sans, Sorts_Mill_Goudy } from "next/font/google";
 import Header from "@/components/layout/Header";
-import SiteFooter from "@/components/layout/SiteFooter";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const publicSans = Public_Sans({
@@ -16,18 +16,24 @@ const sortsMillGoudy = Sorts_Mill_Goudy({
   weight: "400",
 });
 
+const archivo = Archivo({
+  variable: "--font-archivo-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
-  title: { default: "McLeod Family", template: "%s | McLeod Family" },
+  title: { default: "McLeod Family Office | Enterprise, Capital & Continuity", template: "%s | McLeod Family" },
   description: "McLeod Family",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${publicSans.variable} ${sortsMillGoudy.variable} h-full antialiased`}>
+    <html lang="en" className={`${publicSans.variable} ${sortsMillGoudy.variable} ${archivo.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
         <Header />
         <main className="flex-1 bg-spring-wood">{children}</main>
-        <SiteFooter />
+        <Footer />
       </body>
     </html>
   );
