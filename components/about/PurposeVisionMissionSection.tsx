@@ -1,4 +1,6 @@
-const lg = <br className="hidden xl:block" />;
+import Link from "next/link";
+
+const lg =<br className="hidden xl:block" />;
 
 export function PurposeVisionMissionSection() {
   const card =
@@ -17,6 +19,12 @@ export function PurposeVisionMissionSection() {
             <p className="pt-6 font-serif text-[24px] leading-[33px] text-[#f4f1eb]">
               To convert long-term family{lg} responsibility into disciplined{lg} institutional action.
             </p>
+            <Link
+              href="/the-office/our-purpose-mandate"
+              className="mt-6 font-sans text-[14px] leading-[20px] text-[#b89c63] underline-offset-4 hover:underline"
+            >
+              Read our Purpose &amp; Mandate →
+            </Link>
           </div>
           <div className={card}>
             <h3 className={label}>Vision</h3>

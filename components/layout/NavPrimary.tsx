@@ -22,7 +22,9 @@ export default function NavPrimary() {
     >
       {navLinks.map((link) => {
         const active =
-          pathname === link.href || pathname.startsWith(`${link.href}/`);
+          pathname === link.href ||
+          pathname.startsWith(`${link.href}/`) ||
+          !!link.menu?.items.some((item) => item.href === pathname);
         const isOpen = openMenu?.href === link.href && openMenu.path === pathname;
         return (
           // Menus span the header, so this wrapper must not be the positioning context.
