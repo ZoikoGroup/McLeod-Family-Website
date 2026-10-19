@@ -29,7 +29,7 @@ function MenuItem({ item }: { item: NavMenuItem }) {
 
 /**
  * Full-width dropdown, positioned against the header rather than the nav item
- * (the nav item wrapper must not be `relative`).
+ * (the nav item wrapper must not be `relative`). NavPrimary decides when it shows.
  */
 export default function NavMegaMenu({ title, items, mega }: Props) {
   const { intro, aside, width = 1380 } = mega;
@@ -40,7 +40,7 @@ export default function NavMegaMenu({ title, items, mega }: Props) {
   return (
     <div
       style={{ width: `min(${width}px, calc(100vw - 2rem))` }}
-      className="absolute top-full left-1/2 z-50 hidden -translate-x-1/2 group-focus-within:block group-hover:block"
+      className="absolute top-full left-1/2 z-50 -translate-x-1/2"
     >
       <div className="flex border border-white/20 bg-cream shadow-[0px_20px_40px_0px_rgba(0,0,0,0.40)]">
         {/* Intro */}
