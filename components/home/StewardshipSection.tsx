@@ -143,7 +143,7 @@ export function StewardshipSection() {
           {responsibilities.map((item) => (
             <li key={item.number}>
               <Link
-                href="/stewardship"
+                href="/stewardship/our-stewardship-philosophy"
                 aria-label={item.ariaLabel}
                 className={`relative block w-[342px] max-w-full overflow-clip rounded-[2px] bg-timber-green ${item.mobileHeight}`}
               >
@@ -221,7 +221,7 @@ export function StewardshipSection() {
                     </p>
                   </div>
                   <Link
-                    href="/stewardship"
+                    href="/stewardship/our-stewardship-philosophy"
                     aria-label={item.ariaLabel}
                     className="flex size-[44px] shrink-0 items-center justify-center rounded-[22px] border border-twine"
                   >

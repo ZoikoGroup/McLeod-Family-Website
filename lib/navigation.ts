@@ -53,42 +53,42 @@ export type NavLink = {
 export const navLinks: NavLink[] = [
   {
     label: "The Office",
-    href: "/about",
+    href: "/the-office/about",
     menu: {
       title: "The Office",
       icon: "office",
       items: [
         {
           label: "About McLeod",
-          href: "/about",
+          href: "/the-office/about",
           icon: "office",
           description:
             "Our history, structure, and the principles that guide our work across generations.",
         },
         {
           label: "Our Purpose & Mandate",
-          href: "/about/purpose-and-mandate",
+          href: "/the-office/our-purpose-mandate",
           icon: "document",
           description:
             "A long-term mandate to steward family enterprise interests, capital, and legacy.",
         },
         {
           label: "Vision, Mission & Values",
-          href: "/about/vision-mission-values",
+          href: "/the-office/vision-mission-values",
           icon: "stewardship",
           description:
             "Our enduring vision, mission, and values that inform decisions today and for future generations.",
         },
         {
           label: "Our Institutional Role",
-          href: "/about/institutional-role",
+          href: "/the-office/institutional-role",
           icon: "people",
           description:
             "How McLeod organizes, oversees, and coordinates the family’s enterprise interests and assets.",
         },
         {
           label: "Independence & Discretion",
-          href: "/about/independence-and-discretion",
+          href: "/the-office/independence-and-discretion",
           icon: "shield",
           description:
             "Our commitment to independence, confidentiality, and a long-term horizon.",
@@ -98,14 +98,14 @@ export const navLinks: NavLink[] = [
         intro: {
           title: "A permanent institutional foundation for one family.",
           text: "McLeod serves as the coordinating institution for the family’s enterprise interests, capital, governance, and continuity.",
-          primary: { label: "View The Office", href: "/about" },
-          secondary: { label: "Our Institutional Role", href: "/about/institutional-role" },
+          primary: { label: "View The Office", href: "/the-office/about" },
+          secondary: { label: "Our Institutional Role", href: "/the-office/institutional-role" },
         },
         aside: {
           eyebrow: "Our Foundation",
           title: ["One family.", "One coordinating institution."],
           text: "Long-term institutional stewardship of the family’s enterprise interests, capital, and legacy, with a focus on continuity across generations.",
-          link: { label: "Our Purpose & Mandate", href: "/about/purpose-and-mandate" },
+          link: { label: "Our Purpose & Mandate", href: "/the-office/our-purpose-mandate" },
         },
         width: 1300,
       },
@@ -179,7 +179,7 @@ export const navLinks: NavLink[] = [
           eyebrow: "Our Approach",
           title: ["Long-term", "stewardship across", "generations."],
           text: "We take a disciplined, principled and responsible approach to the coordination of our family’s enterprise interests, capital and legacy.",
-          link: { label: "Our Stewardship Philosophy", href: "/stewardship" },
+          link: { label: "Our Stewardship Philosophy", href: "/stewardship/our-stewardship-philosophy" },
           image: true,
         },
       },
@@ -187,14 +187,14 @@ export const navLinks: NavLink[] = [
   },
   {
     label: "Stewardship",
-    href: "/stewardship",
+    href: "/stewardship/our-stewardship-philosophy",
     menu: {
       title: "Stewardship",
       icon: "stewardship",
       items: [
         {
           label: "Our Stewardship Philosophy",
-          href: "/stewardship",
+          href: "/stewardship/our-stewardship-philosophy",
           icon: "clock",
           description:
             "A disciplined and responsible approach to the coordination of our family’s enterprise interests, capital and legacy.",
@@ -232,8 +232,8 @@ export const navLinks: NavLink[] = [
         intro: {
           title: "A disciplined approach to preserving value across generations.",
           text: "Stewardship guides how McLeod protects capital, supports resilience, and sustains long-term family continuity.",
-          primary: { label: "View Stewardship", href: "/stewardship" },
-          secondary: { label: "Our Stewardship Philosophy", href: "/stewardship" },
+          primary: { label: "View Stewardship", href: "/stewardship/our-stewardship-philosophy" },
+          secondary: { label: "Our Stewardship Philosophy", href: "/stewardship/our-stewardship-philosophy" },
         },
         aside: {
           eyebrow: "Our Philosophy",
@@ -392,8 +392,9 @@ export const footerGroups: FooterGroup[] = [
     title: "Resources",
     icon: "document",
     items: [
-      { label: "Institutional Overview", href: "/about" },
-      { label: "Stewardship Principles", href: "/stewardship" },
+      { label: "Institutional Overview", href: "/the-office/about" },
+      { label: "Purpose & Mandate", href: "/the-office/our-purpose-mandate" },
+      { label: "Stewardship Principles", href: "/stewardship/our-stewardship-philosophy" },
       { label: "Verification Guidance", href: "/verification" },
       { label: "Legal Notices", href: "/legal" },
       { label: "Sitemap", href: "/sitemap" },
