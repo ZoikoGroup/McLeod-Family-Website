@@ -58,6 +58,70 @@ const paths: Record<NavIconName, React.ReactNode> = {
       <path d="m2 7 10 6 10-6" />
     </>
   ),
+  // Two people
+  people: (
+    <>
+      <circle cx="9" cy="8" r="3.5" />
+      <path d="M2.5 20a6.5 6.5 0 0 1 13 0" />
+      <path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14.5a6.5 6.5 0 0 1 3 5.5" />
+    </>
+  ),
+  // Plain shield
+  shield: <path d="M12 2.5 4.5 5.5v6c0 4.6 3.1 8.4 7.5 10 4.4-1.6 7.5-5.4 7.5-10v-6L12 2.5Z" />,
+  // Bar chart
+  chart: (
+    <>
+      <path d="M5 20v-6M10 20V10M15 20V6M20 20V3" />
+      <path d="M3 20h19" />
+    </>
+  ),
+  // Coin
+  coin: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M14.5 9.5c-.4-1-1.3-1.5-2.5-1.5-1.5 0-2.5.8-2.5 2s1 1.6 2.5 2 2.5.9 2.5 2-1 2-2.5 2c-1.2 0-2.1-.5-2.5-1.5M12 6.5V8M12 16v1.5" />
+    </>
+  ),
+  // Building with windows
+  building: (
+    <>
+      <rect x="4" y="3" width="16" height="18" rx="1" />
+      <path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-3h4v3" />
+    </>
+  ),
+  // Pie chart
+  pie: (
+    <>
+      <path d="M12 3a9 9 0 1 0 9 9h-9V3Z" />
+      <path d="M15 3.5A9 9 0 0 1 20.5 9H15V3.5Z" />
+    </>
+  ),
+  clock: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+    </>
+  ),
+  // Stacked coins
+  database: (
+    <>
+      <ellipse cx="12" cy="5.5" rx="7" ry="2.5" />
+      <path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" />
+    </>
+  ),
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z" />
+    </>
+  ),
+  // Warning triangle
+  warning: (
+    <>
+      <path d="M10.3 3.9 2.4 17.5A2 2 0 0 0 4.1 20.5h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" />
+      <path d="M12 9v4.5M12 17h.01" />
+    </>
+  ),
   // Map pin
   pin: (
     <>
