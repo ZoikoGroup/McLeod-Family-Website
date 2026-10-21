@@ -5,6 +5,20 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [{ source: "/", destination: "/home" }];
   },
+  async redirects() {
+    return [
+      {
+        source: "/our-institutional-role",
+        destination: "/the-office/institutional-role",
+        permanent: false,
+      },
+      {
+        source: "/independence-and-discretion",
+        destination: "/the-office/independence-and-discretion",
+        permanent: false,
+      },
+    ];
+  },
   experimental: {
     workerThreads: false,
     cpus: 1,

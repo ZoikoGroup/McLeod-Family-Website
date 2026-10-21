@@ -1,0 +1,12 @@
+export { SectionIntro } from "./SectionIntro";
+export { IndependenceHeroSection } from "./IndependenceHeroSection";
+export { DefinedMandateSection } from "./DefinedMandateSection";
+export { IndependentJudgmentSection } from "./IndependentJudgmentSection";
+export { SeparatePurposesSection } from "./SeparatePurposesSection";
+export { ProportionateDisclosureSection } from "./ProportionateDisclosureSection";
+export { PublicVsPrivateTableSection } from "./PublicVsPrivateTableSection";
+export { VerifiedRelationshipSection } from "./VerifiedRelationshipSection";
+export { VerifyBeforeActPolicySection } from "./VerifyBeforeActPolicySection";
+export { TransitionContinuitySection } from "./TransitionContinuitySection";
+export { IndependenceQuestionsSection } from "./IndependenceQuestionsSection";
+export { ClearContactCtaSection } from "./ClearContactCtaSection";
