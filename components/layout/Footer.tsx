@@ -74,33 +74,29 @@ export default function Footer() {
   return (
     <>
       {/* Closing call to action */}
-      <section className="relative overflow-hidden bg-porcelain">
+      <section className="relative overflow-hidden bg-[#f4f0e8]">
         <Image
-          src="/images/home/hero-lake-desktop.webp"
+          src="/images/home/stewardship-lake-figma.png"
           alt=""
           fill
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="relative bg-gradient-to-r from-porcelain from-40% to-porcelain/40 px-6 py-20 lg:px-14">
+        <div className="relative bg-gradient-to-r from-[#f4f0e8] from-40% to-[#f4f0e8]/40 px-6 py-20 lg:px-14">
           <div className="mx-auto w-full max-w-[1328px]">
             <div className="max-w-[800px]">
-              <p className="font-archivo text-xs leading-4 font-bold tracking-widest text-twine uppercase">
-                McLeod Family Office
-              </p>
-              <h2 className="pt-4 font-serif text-4xl leading-tight text-ebony lg:text-5xl lg:leading-[50.6px]">
-                An enduring commitment to stewardship.
+              <h2 className="font-serif text-4xl leading-tight text-dune lg:text-5xl lg:leading-[51px]">
+                An enduring commitment to<br className="hidden sm:inline" /> stewardship.
               </h2>
-              <p className="pt-4 font-serif text-xl leading-8 text-ebony/90">
-                For legitimate institutional correspondence and independent communication
-                verification.
+              <p className="pt-4 font-serif text-xl leading-8 text-dune">
+                For legitimate institutional correspondence and independent communication verification.
               </p>
               <div className="flex flex-wrap gap-4 pt-8">
-                <Link href={contactLink.href} className={`${ctaButton} border-twine bg-twine`}>
+                <Link href={contactLink.href} className={`${ctaButton} border-twine bg-twine text-white`}>
                   {contactLink.label}
                   <span aria-hidden="true">→</span>
                 </Link>
-                <Link href="/verification" className={`${ctaButton} border-ebony`}>
+                <Link href="/verification" className={`${ctaButton} border-dune bg-transparent text-dune transition-colors hover:bg-dune hover:text-white`}>
                   Verify a Communication
                   <span aria-hidden="true">→</span>
                 </Link>
