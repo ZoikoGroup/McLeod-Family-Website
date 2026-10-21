@@ -31,6 +31,12 @@ export function PurposeVisionMissionSection() {
             <p className="pt-6 font-serif text-[20px] leading-[32.5px] text-[rgba(244,241,235,0.8)]">
               To build an enduring family institution that{lg} preserves independence, strengthens{lg} enterprise, compounds capital responsibly{lg} and carries stewardship across generations.
             </p>
+            <Link
+              href="/the-office/vision-mission-values"
+              className="mt-6 font-sans text-[14px] leading-[20px] text-[#b89c63] underline-offset-4 hover:underline"
+            >
+              Read our Vision, Mission &amp; Values →
+            </Link>
           </div>
           <div className={card}>
             <h3 className={label}>Mission</h3>
