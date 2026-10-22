@@ -84,20 +84,20 @@ export default function Footer() {
         />
         <div className="relative bg-gradient-to-r from-[#f4f0e8] from-40% to-[#f4f0e8]/40 px-6 py-20 lg:px-14">
           <div className="mx-auto w-full max-w-[1328px]">
-            <div className="max-w-[800px]">
+            <div className="max-w-[1240px]">
               <h2 className="font-serif text-4xl leading-tight text-dune lg:text-5xl lg:leading-[51px]">
-                An enduring commitment to<br className="hidden sm:inline" /> stewardship.
+                Trust first. Verify before you act.
               </h2>
               <p className="pt-4 font-serif text-xl leading-8 text-dune">
-                For legitimate institutional correspondence and independent communication verification.
+                Confirm official McLeod domains, correspondence channels and the independent callback protocol before acting on sensitive instructions.
               </p>
               <div className="flex flex-wrap gap-4 pt-8">
-                <Link href={contactLink.href} className={`${ctaButton} border-twine bg-twine text-white`}>
-                  {contactLink.label}
+                <Link href="/verification" className={`${ctaButton} border-twine bg-twine text-white`}>
+                  Open the Verification Centre
                   <span aria-hidden="true">→</span>
                 </Link>
-                <Link href="/verification" className={`${ctaButton} border-dune bg-transparent text-dune transition-colors hover:bg-dune hover:text-white`}>
-                  Verify a Communication
+                <Link href={contactLink.href} className={`${ctaButton} border-dune bg-transparent text-dune transition-colors hover:bg-dune hover:text-white`}>
+                  {contactLink.label}
                   <span aria-hidden="true">→</span>
                 </Link>
               </div>

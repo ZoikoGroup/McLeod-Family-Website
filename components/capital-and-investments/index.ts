@@ -1,0 +1,11 @@
+export { CapitalInvestmentsHeroSection } from "./CapitalInvestmentsHeroSection";
+export { CapitalPrinciplesGlanceSection } from "./CapitalPrinciplesGlanceSection";
+export { InstitutionalOfficeInteriorImage } from "./InstitutionalOfficeInteriorImage";
+export { LongHorizonSection } from "./LongHorizonSection";
+export { ResilienceDownsideSection } from "./ResilienceDownsideSection";
+export { SelectiveConcentrationSection } from "./SelectiveConcentrationSection";
+export { DiversificationRiskSection } from "./DiversificationRiskSection";
+export { IndependentExpertiseSection } from "./IndependentExpertiseSection";
+export { MeasurementReviewSection } from "./MeasurementReviewSection";
+export { CapitalFaqSection } from "./CapitalFaqSection";
+export { CapitalVerifySection } from "./CapitalVerifySection";

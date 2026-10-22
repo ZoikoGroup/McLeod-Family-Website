@@ -98,7 +98,7 @@ export default function Header() {
         </div>
       </div>
 
-      <header className="relative border-b border-swirl bg-celtic lg:sticky lg:top-0 lg:z-40">
+      <header className="relative bg-celtic lg:sticky lg:top-0 lg:z-40">
         <div className="mx-auto flex h-[72px] w-full max-w-[1440px] items-center justify-between gap-6 px-6 lg:h-20 xl:px-10">
           <Link
             href="/"
