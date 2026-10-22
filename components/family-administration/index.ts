@@ -1,0 +1,10 @@
+export { FamilyAdministrationHeroSection } from "./FamilyAdministrationHeroSection";
+export { CoordinationSection } from "./CoordinationSection";
+export { DocumentReviewImageSection } from "./DocumentReviewImageSection";
+export { RecordsContinuitySection } from "./RecordsContinuitySection";
+export { ReportingOversightSection } from "./ReportingOversightSection";
+export { BoardroomImageSection } from "./BoardroomImageSection";
+export { DistinctDutiesSection } from "./DistinctDutiesSection";
+export { SpecialistRemitSection } from "./SpecialistRemitSection";
+export { DiscretionVerificationSection } from "./DiscretionVerificationSection";
+export { AdminFaqSection } from "./AdminFaqSection";
