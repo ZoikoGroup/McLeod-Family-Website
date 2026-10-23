@@ -1,0 +1,10 @@
+export { TrustEstateTaxHeroSection } from "./TrustEstateTaxHeroSection";
+export { CoordinationResponsibilitySection } from "./CoordinationResponsibilitySection";
+export { DefinedAuthoritySection } from "./DefinedAuthoritySection";
+export { ContinuityPlanningSection } from "./ContinuityPlanningSection";
+export { TaxConsiderationsSection } from "./TaxConsiderationsSection";
+export { DocumentReviewImageSection } from "./DocumentReviewImageSection";
+export { SeparateAccountabilitySection } from "./SeparateAccountabilitySection";
+export { CoordinationPrincipleSection } from "./CoordinationPrincipleSection";
+export { DiscretionResponsibilitySection } from "./DiscretionResponsibilitySection";
+export { TrustEstateFaqSection } from "./TrustEstateFaqSection";

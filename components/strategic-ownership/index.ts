@@ -1,0 +1,13 @@
+export { StrategicOwnershipHeroSection } from "./StrategicOwnershipHeroSection";
+export { EnterpriseInterestsSection } from "./EnterpriseInterestsSection";
+export { BoardroomGovernanceImageSection } from "./BoardroomGovernanceImageSection";
+export { OwnershipPrinciplesSection } from "./OwnershipPrinciplesSection";
+export { BoardDisciplineSection } from "./BoardDisciplineSection";
+export { StrategicOversightSection } from "./StrategicOversightSection";
+export { AnalysisReportingImageSection } from "./AnalysisReportingImageSection";
+export { ClearReportingSection } from "./ClearReportingSection";
+export { SeparateResponsibilitiesSection } from "./SeparateResponsibilitiesSection";
+export { ContinuingResponsibilitySection } from "./ContinuingResponsibilitySection";
+export { InstitutionalClaritySection } from "./InstitutionalClaritySection";
+export { StrategicFaqSection } from "./StrategicFaqSection";
+export { StrategicVerifySection } from "./StrategicVerifySection";
