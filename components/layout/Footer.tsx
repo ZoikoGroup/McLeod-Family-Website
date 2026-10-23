@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   contactLink,
   footerGroups,
@@ -70,41 +73,48 @@ function SocialIcon({ name }: { name: "linkedin" | "x" }) {
   );
 }
 
-export default function Footer() {
+export default function Footer({ hideCta: hideCtaProp }: { hideCta?: boolean } = {}) {
+  const pathname = usePathname();
+  const hideCta =
+    hideCtaProp ||
+    pathname?.includes("treasury-and-liquidity") ||
+    pathname?.includes("treasury%20and%20liquidity") ||
+    pathname?.includes("treasury");
+
   return (
     <>
       {/* Closing call to action */}
-      <section className="relative overflow-hidden bg-[#f4f0e8]">
-        <Image
-          src="/images/home/stewardship-lake-figma.png"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div className="relative bg-gradient-to-r from-[#f4f0e8] from-40% to-[#f4f0e8]/40 px-6 py-20 lg:px-14">
-          <div className="mx-auto w-full max-w-[1328px]">
-            <div className="max-w-[1240px]">
+      {!hideCta && (
+        <section className="relative overflow-hidden bg-[#f4f0e8]">
+          <Image
+            src="/images/home/stewardship-lake-figma.png"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="relative bg-gradient-to-r from-[#f4f0e8] from-40% to-[#f4f0e8]/40 px-6 py-20 lg:px-14">
+            <div className="mx-auto w-full max-w-[1328px]">
               <h2 className="font-serif text-4xl leading-tight text-dune lg:text-5xl lg:leading-[51px]">
-                Trust first. Verify before you act.
+                Verify before you act. Contact through<br className="hidden sm:inline" /> official channels.
               </h2>
-              <p className="pt-4 font-serif text-xl leading-8 text-dune">
-                Confirm official McLeod domains, correspondence channels and the independent callback protocol before acting on sensitive instructions.
+              <p className="pt-4 font-serif text-[17px] sm:text-[18.5px] lg:text-[19.5px] leading-8 text-dune max-w-[1180px]">
+                Before acting on a sensitive or changed instruction concerning McLeod Family Office or a related enterprise, independently<br className="hidden sm:inline" /> verify the communication and the authority of the relevant party. For legitimate institutional enquiries, use the Office’s official<br className="hidden sm:inline" /> contact route and do not transmit confidential financial or identity information until an appropriate secure channel has been established.
               </p>
               <div className="flex flex-wrap gap-4 pt-8">
-                <Link href="/verification" className={`${ctaButton} border-twine bg-twine text-white`}>
+                <Link href="/verification" className={`${ctaButton} border-twine bg-twine text-[#172130] transition-opacity hover:opacity-90`}>
                   Open the Verification Centre
-                  <span aria-hidden="true">→</span>
+                  <span aria-hidden="true" className="text-[#172130]">→</span>
                 </Link>
-                <Link href={contactLink.href} className={`${ctaButton} border-dune bg-transparent text-dune transition-colors hover:bg-dune hover:text-white`}>
+                <Link href={contactLink.href} className={`${ctaButton} border-dune bg-transparent text-dune`}>
                   {contactLink.label}
                   <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <footer className="bg-mirage px-6 pt-14 pb-7 lg:px-14">
         <div className="mx-auto w-full max-w-[1328px]">

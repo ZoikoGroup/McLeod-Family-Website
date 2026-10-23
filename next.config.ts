@@ -12,6 +12,16 @@ const nextConfig: NextConfig = {
       { source: "/family-administration", destination: "/our-activities/family-administration" },
       { source: "/family-administration-reporting", destination: "/our-activities/family-administration" },
       { source: "/our-activities/family-administration-reporting", destination: "/our-activities/family-administration" },
+      { source: "/activities/philanthropy-and-legacy", destination: "/our-activities/philanthropy-and-legacy" },
+      { source: "/philanthropy-and-legacy", destination: "/our-activities/philanthropy-and-legacy" },
+      { source: "/activities/strategic-ownership", destination: "/our-activities/strategic-ownership" },
+      { source: "/strategic-ownership", destination: "/our-activities/strategic-ownership" },
+      { source: "/activities/treasury-and-liquidity", destination: "/our-activities/treasury-and-liquidity" },
+      { source: "/treasury-and-liquidity", destination: "/our-activities/treasury-and-liquidity" },
+      { source: "/activities/trust-estate-tax-coordination", destination: "/our-activities/trust-estate-tax-coordination" },
+      { source: "/trust-estate-tax-coordination", destination: "/our-activities/trust-estate-tax-coordination" },
+      { source: "/activities/trust-estate-and-tax", destination: "/our-activities/trust-estate-tax-coordination" },
+      { source: "/trust-estate-and-tax", destination: "/our-activities/trust-estate-tax-coordination" },
     ];
   },
   async redirects() {
