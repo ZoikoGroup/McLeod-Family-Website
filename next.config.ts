@@ -22,6 +22,14 @@ const nextConfig: NextConfig = {
       { source: "/trust-estate-tax-coordination", destination: "/our-activities/trust-estate-tax-coordination" },
       { source: "/activities/trust-estate-and-tax", destination: "/our-activities/trust-estate-tax-coordination" },
       { source: "/trust-estate-and-tax", destination: "/our-activities/trust-estate-tax-coordination" },
+      { source: "/responsible-ownership", destination: "/stewardship/responsible-ownership" },
+      { source: "/long-term-value-creation", destination: "/stewardship/long-term-value-creation" },
+      { source: "/generational-stewardship", destination: "/stewardship/generational-stewardship" },
+      { source: "/capital-preservation", destination: "/stewardship/capital-preservation" },
+      { source: "/our-governance-principles", destination: "/governance" },
+      { source: "/confidentiality-integrity", destination: "/governance/confidentiality-and-integrity" },
+      { source: "/confidentiality-and-integrity", destination: "/governance/confidentiality-and-integrity" },
+      { source: "/governance/confidentiality-integrity", destination: "/governance/confidentiality-and-integrity" },
     ];
   },
   async redirects() {
