@@ -1,0 +1,9 @@
+export { ValueCreationHeroSection } from "./ValueCreationHeroSection";
+export { HorizonMeasuredSection } from "./HorizonMeasuredSection";
+export { ResponsibleOwnershipSection } from "./ResponsibleOwnershipSection";
+export { CapitalDisciplineSection } from "./CapitalDisciplineSection";
+export { NextHandoverSection } from "./NextHandoverSection";
+export { RightResponsibilitiesSection } from "./RightResponsibilitiesSection";
+export { DiscloseMandateSection } from "./DiscloseMandateSection";
+export { InstitutionalQuestionsSection } from "./InstitutionalQuestionsSection";
+export { ValueCreationVerifySection } from "./ValueCreationVerifySection";

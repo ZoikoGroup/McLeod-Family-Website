@@ -1,0 +1,10 @@
+export { ResponsibleOwnershipHeroSection } from "./ResponsibleOwnershipHeroSection";
+export { OwnershipResponsibilitySection } from "./OwnershipResponsibilitySection";
+export { DefineAuthoritySection } from "./DefineAuthoritySection";
+export { OversightManagementSection } from "./OversightManagementSection";
+export { ReportingBoundarySection } from "./ReportingBoundarySection";
+export { DownsideRiskSection } from "./DownsideRiskSection";
+export { FutureStewardshipSection } from "./FutureStewardshipSection";
+export { PublicExplanationSection } from "./PublicExplanationSection";
+export { OwnershipFaqSection } from "./OwnershipFaqSection";
+export { ResponsibleOwnershipVerifySection } from "./ResponsibleOwnershipVerifySection";
