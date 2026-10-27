@@ -30,6 +30,10 @@ const nextConfig: NextConfig = {
       { source: "/confidentiality-integrity", destination: "/governance/confidentiality-and-integrity" },
       { source: "/confidentiality-and-integrity", destination: "/governance/confidentiality-and-integrity" },
       { source: "/governance/confidentiality-integrity", destination: "/governance/confidentiality-and-integrity" },
+      { source: "/institutional-oversight", destination: "/governance/institutional-oversight" },
+      { source: "/succession-and-continuity", destination: "/governance/succession-and-continuity" },
+      { source: "/succession-continuity", destination: "/governance/succession-and-continuity" },
+      { source: "/family-governance", destination: "/governance/family-governance" },
     ];
   },
   async redirects() {
