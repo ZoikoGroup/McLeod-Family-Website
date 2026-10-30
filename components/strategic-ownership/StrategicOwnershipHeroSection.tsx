@@ -60,7 +60,7 @@ export function StrategicOwnershipHeroSection() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-4 pt-8">
           <Link
-            href="#enterprise-interests"
+            href="generational-stewardship"
             className="inline-flex min-h-[53px] items-center justify-center border border-[#D3A75A] bg-[#D3A75A] px-6 py-3 font-serif text-[17px] leading-[26.35px] text-[#34322E] transition-opacity hover:opacity-90"
           >
             Explore Enterprise Stewardship
