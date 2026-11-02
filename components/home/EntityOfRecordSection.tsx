@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import CopyButton from "./CopyButton";
 
 type Entry = {
   id: string;
@@ -129,20 +129,7 @@ export function EntityOfRecordSection() {
               <span className="hidden lg:inline">{e.desktopValue}</span>
             </dd>
             <dd className="mt-[10px] lg:hidden">
-              <button
-                type="button"
-                aria-label={`Copy ${e.mobileValue}`}
-                className="flex min-h-[32px] items-center gap-[8px] py-[8.2px] text-[13px] leading-[15.6px] text-kumera"
-              >
-                <Image
-                  src="/images/home/entity-icon-copy.svg"
-                  alt=""
-                  width={14}
-                  height={14}
-                  aria-hidden="true"
-                />
-                Copy
-              </button>
+              <CopyButton value={e.mobileValue} />
             </dd>
           </div>
         ))}
