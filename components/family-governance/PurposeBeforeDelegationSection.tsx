@@ -98,7 +98,7 @@ export function PurposeBeforeDelegationSection() {
       {/* Text Link */}
       <div className="pt-6">
         <Link
-          href="/the-office/institutional-role"
+          href="/the-office/our-institutional-role"
           className="inline-block font-serif text-[17px] leading-[26.34px] text-[#23463A] border-b border-transparent hover:border-[#23463A] transition-colors"
         >
           Understand the Office’s Institutional Role →

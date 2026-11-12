@@ -81,7 +81,7 @@ export const navLinks: NavLink[] = [
         },
         {
           label: "Our Institutional Role",
-          href: "/the-office/institutional-role",
+          href: "/the-office/our-institutional-role",
           icon: "people",
           description:
             "How McLeod organizes, oversees, and coordinates the family’s enterprise interests and assets.",
@@ -99,7 +99,7 @@ export const navLinks: NavLink[] = [
           title: "A permanent institutional foundation for one family.",
           text: "McLeod serves as the coordinating institution for the family’s enterprise interests, capital, governance, and continuity.",
           primary: { label: "View The Office", href: "/the-office/about" },
-          secondary: { label: "Our Institutional Role", href: "/the-office/institutional-role" },
+          secondary: { label: "Our Institutional Role", href: "/the-office/our-institutional-role" },
         },
         aside: {
           eyebrow: "Our Foundation",

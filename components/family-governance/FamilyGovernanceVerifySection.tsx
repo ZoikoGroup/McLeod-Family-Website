@@ -46,7 +46,7 @@ export function FamilyGovernanceVerifySection() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-4 pt-8">
           <Link
-            href="/the-office/institutional-role"
+            href="/the-office/our-institutional-role"
             className="inline-flex items-center gap-3 rounded-[2px] border border-[#C6A15B] bg-[#C6A15B] px-7 py-3.5 font-archivo text-sm font-semibold leading-[22.4px] text-[#172130] transition-opacity hover:opacity-90"
           >
             <span>Read Decision Rights &amp; Controls</span>

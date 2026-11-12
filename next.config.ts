@@ -40,7 +40,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/our-institutional-role",
-        destination: "/the-office/institutional-role",
+        destination: "/the-office/our-institutional-role",
         permanent: false,
       },
       {
