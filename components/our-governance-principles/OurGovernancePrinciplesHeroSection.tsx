@@ -11,7 +11,8 @@ export function OurGovernancePrinciplesHeroSection() {
       {/* Background Image */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <Image
-          src="/images/our-governance-principles/hero-our-governance-principles.png"
+          // src="/images/our-governance-principles/hero-our-governance-principles.png"
+          src="/images/our-governance-principles/1.png"
           alt=""
           fill
           priority
@@ -34,8 +35,11 @@ export function OurGovernancePrinciplesHeroSection() {
       <div className="relative mx-auto w-full max-w-[1280px] px-6 pt-[120px] pb-20 lg:px-12 lg:pb-24">
         {/* Text:margin #374:2935 - padding: 0px 0px 16px */}
         <div className="pb-4">
-          <p className="font-serif text-[13px] leading-[19px] tracking-[0.05em] uppercase text-[#d3a75a]">
+          {/* <p className="font-serif text-[13px] leading-[19px] tracking-[0.05em] uppercase text-[#d3a75a]">
             GOVERNANCE
+          </p> */}
+          <p className="font-serif text-[13px] leading-[19px] tracking-[0.05em] uppercase text-[#FFFBF5]">
+            Governance / McLeod Family Office
           </p>
         </div>
 
@@ -56,13 +60,15 @@ export function OurGovernancePrinciplesHeroSection() {
         {/* Paragraph:margin #374:2942 - padding: 0px 0px 24px, width: 800 */}
         <div className="pb-6">
           <p className="font-serif text-[17px] leading-[26.35px] text-[#f4f1ea]/90 max-w-[800px]">
-            McLeod Family Office approaches governance through defined mandates, purpose-appropriate responsibilities,
-            <br className="hidden lg:inline" />{" "}
-            independent judgment and continuity. These public principles explain how the Office understands
-            <br className="hidden lg:inline" />{" "}
-            stewardship. They do not disclose private family decisions, internal authorities or the legal identity of a
-            <br className="hidden lg:inline" />{" "}
-            contracting entity.
+            McLeod Family Office approaches governance through defined mandates,
+            purpose-appropriate responsibilities,
+            <br className="hidden lg:inline" /> independent judgment and
+            continuity. These public principles explain how the Office
+            understands
+            <br className="hidden lg:inline" /> stewardship. They do not
+            disclose private family decisions, internal authorities or the legal
+            identity of a
+            <br className="hidden lg:inline" /> contracting entity.
           </p>
         </div>
 
@@ -70,9 +76,10 @@ export function OurGovernancePrinciplesHeroSection() {
         <div className="pt-4 pb-6">
           <div className="max-w-[800px] border-l-2 border-[#d3a75a] pl-4">
             <p className="font-serif text-[17px] leading-[26.35px] text-[#f4f1ea]/90">
-              McLeod Family Office serves one family. It does not solicit third-party investment capital, manage external
-              <br className="hidden lg:inline" />{" "}
-              client assets or offer investment products to the public.
+              McLeod Family Office serves one family. It does not solicit
+              third-party investment capital, manage external
+              <br className="hidden lg:inline" /> client assets or offer
+              investment products to the public.
             </p>
           </div>
         </div>

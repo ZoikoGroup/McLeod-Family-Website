@@ -72,7 +72,8 @@ export function DistinctResponsibilitiesSection() {
         {/* Image: Governance Process and Review */}
         <div className="mt-12 w-full overflow-hidden rounded-[2px]">
           <Image
-            src="/images/our-governance-principles/governance-process-review.png"
+            // src="/images/our-governance-principles/governance-process-review.png"
+            src="/images/our-governance-principles/2.png"
             alt="Governance Process and Review"
             width={1184}
             height={416}
