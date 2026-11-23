@@ -416,10 +416,10 @@ export const footerGroups: FooterGroup[] = [
     items: [
       { label: "Legal Notices", href: "/legal" },
       { label: "Privacy Notice", href: "/privacy" },
-      { label: "Website Terms", href: "/terms" },
-      { label: "Cookie Notice", href: "/cookies" },
-      { label: "Cookie Preferences", href: "/cookie-preferences" },
-      { label: "Accessibility Statement", href: "/accessibility" },
+      { label: "Website Terms", href: "/legal/website-terms" },
+      { label: "Cookie Notice", href: "/legal/cookie-notice" },
+      { label: "Cookie Preferences", href: "/legal/cookie-preferences" },
+      { label: "Accessibility Statement", href: "/legal/accessibility-statement" },
     ],
   },
 ];
@@ -439,8 +439,8 @@ export const socialLinks = [
 
 export const legalLinks = [
   { label: "Privacy Notice", href: "/privacy" },
-  { label: "Website Terms", href: "/terms" },
-  { label: "Cookie Preferences", href: "/cookie-preferences" },
-  { label: "Accessibility", href: "/accessibility" },
+  { label: "Website Terms", href: "/legal/website-terms" },
+  { label: "Cookie Preferences", href: "/legal/cookie-preferences" },
+  { label: "Accessibility", href: "/legal/accessibility-statement" },
   { label: "Legal Notices", href: "/legal" },
 ];

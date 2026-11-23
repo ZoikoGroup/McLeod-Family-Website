@@ -1,0 +1,9 @@
+export { AccessUseSection } from "./AccessUseSection";
+export { ChangesNoticesSection } from "./ChangesNoticesSection";
+export { ContentOwnershipSection } from "./ContentOwnershipSection";
+export { DisclaimersSection } from "./DisclaimersSection";
+export { ExternalLinksSection } from "./ExternalLinksSection";
+export { NoOfferSection } from "./NoOfferSection";
+export { ProhibitedMisuseSection } from "./ProhibitedMisuseSection";
+export { ScopeOperatorSection } from "./ScopeOperatorSection";
+export { WebsiteTermsHeroSection } from "./WebsiteTermsHeroSection";
