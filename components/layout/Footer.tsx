@@ -73,8 +73,15 @@ function SocialIcon({ name }: { name: "linkedin" | "x" }) {
   );
 }
 
+// Pages whose design uses different closing-CTA copy from the default.
+const ctaCopyByPath: Record<string, string> = {
+  "/legal/privacy-notice":
+    "Before acting on a sensitive instruction or changed payment detail, independently verify the communication through an official contact route. For legitimate institutional or privacy enquiries, use Contact the Office without sending confidential records.",
+};
+
 export default function Footer({ hideCta: hideCtaProp }: { hideCta?: boolean } = {}) {
   const pathname = usePathname();
+  const ctaCopy = pathname ? ctaCopyByPath[pathname] : undefined;
   const hideCta =
     hideCtaProp ||
     pathname?.includes("treasury-and-liquidity") ||
@@ -98,9 +105,15 @@ export default function Footer({ hideCta: hideCtaProp }: { hideCta?: boolean } =
               <h2 className="font-serif text-4xl leading-tight text-dune lg:text-5xl lg:leading-[51px]">
                 Verify before you act. Contact through<br className="hidden sm:inline" /> official channels.
               </h2>
-              <p className="pt-4 font-serif text-[17px] sm:text-[18.5px] lg:text-[19.5px] leading-8 text-dune max-w-[1180px]">
-                Before acting on a sensitive or changed instruction concerning McLeod Family Office or a related enterprise, independently<br className="hidden sm:inline" /> verify the communication and the authority of the relevant party. For legitimate institutional enquiries, use the Office’s official<br className="hidden sm:inline" /> contact route and do not transmit confidential financial or identity information until an appropriate secure channel has been established.
-              </p>
+              {ctaCopy ? (
+                <p className="pt-4 font-serif text-[17px] sm:text-[18.5px] lg:text-[19.5px] leading-8 text-dune max-w-[1140px]">
+                  {ctaCopy}
+                </p>
+              ) : (
+                <p className="pt-4 font-serif text-[17px] sm:text-[18.5px] lg:text-[19.5px] leading-8 text-dune max-w-[1180px]">
+                  Before acting on a sensitive or changed instruction concerning McLeod Family Office or a related enterprise, independently<br className="hidden sm:inline" /> verify the communication and the authority of the relevant party. For legitimate institutional enquiries, use the Office’s official<br className="hidden sm:inline" /> contact route and do not transmit confidential financial or identity information until an appropriate secure channel has been established.
+                </p>
+              )}
               <div className="flex flex-wrap gap-4 pt-8">
                 <Link href="/verification" className={`${ctaButton} border-twine bg-twine text-[#172130] transition-opacity hover:opacity-90`}>
                   Open the Verification Centre
