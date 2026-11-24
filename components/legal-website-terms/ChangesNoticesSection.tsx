@@ -5,7 +5,7 @@ import { inlineLink } from "./shared";
 
 const related = [
   { label: "Legal Notices", href: "/legal" },
-  { label: "Privacy Notice", href: "/privacy" },
+  { label: "Privacy Notice", href: "/legal/privacy-notice" },
   { label: "Cookie Notice", href: "/legal/cookie-notice" },
   { label: "Accessibility Statement", href: "/legal/accessibility-statement" },
 ];

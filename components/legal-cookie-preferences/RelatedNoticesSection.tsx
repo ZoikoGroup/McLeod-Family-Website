@@ -10,7 +10,7 @@ const notices = [
   {
     title: "Privacy Notice",
     text: "Discloses how McLeod Family Office processes personal data, applicable legal bases and your rights.",
-    link: { label: "Read Privacy Notice", href: "/privacy" },
+    link: { label: "Read Privacy Notice", href: "/legal/privacy-notice" },
   },
   {
     title: "Verification Centre",

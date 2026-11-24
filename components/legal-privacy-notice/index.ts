@@ -1,0 +1,9 @@
+export { CookiesSecuritySection } from "./CookiesSecuritySection";
+export { InformationCollectedSection } from "./InformationCollectedSection";
+export { InformationUseSection } from "./InformationUseSection";
+export { PrivacyHeroSection } from "./PrivacyHeroSection";
+export { PrivacyRightsSection } from "./PrivacyRightsSection";
+export { RecipientsSharingSection } from "./RecipientsSharingSection";
+export { ResponsibleOrganizationSection } from "./ResponsibleOrganizationSection";
+export { RetentionDeletionSection } from "./RetentionDeletionSection";
+export { SummaryScopeSection } from "./SummaryScopeSection";

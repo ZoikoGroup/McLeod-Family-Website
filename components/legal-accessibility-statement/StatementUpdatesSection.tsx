@@ -5,7 +5,7 @@ import { DefinitionRow, SectionShell } from "./shared";
 const routes = [
   { label: "Contact the Office", href: "/contact" },
   { label: "Open the Verification Centre", href: "/verification" },
-  { label: "Privacy Notice", href: "/privacy" },
+  { label: "Privacy Notice", href: "/legal/privacy-notice" },
 ];
 
 export function StatementUpdatesSection() {

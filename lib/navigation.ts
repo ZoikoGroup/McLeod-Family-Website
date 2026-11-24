@@ -415,7 +415,7 @@ export const footerGroups: FooterGroup[] = [
     icon: "document",
     items: [
       { label: "Legal Notices", href: "/legal" },
-      { label: "Privacy Notice", href: "/privacy" },
+      { label: "Privacy Notice", href: "/legal/privacy-notice" },
       { label: "Website Terms", href: "/legal/website-terms" },
       { label: "Cookie Notice", href: "/legal/cookie-notice" },
       { label: "Cookie Preferences", href: "/legal/cookie-preferences" },
@@ -438,7 +438,7 @@ export const socialLinks = [
 ] as const;
 
 export const legalLinks = [
-  { label: "Privacy Notice", href: "/privacy" },
+  { label: "Privacy Notice", href: "/legal/privacy-notice" },
   { label: "Website Terms", href: "/legal/website-terms" },
   { label: "Cookie Preferences", href: "/legal/cookie-preferences" },
   { label: "Accessibility", href: "/legal/accessibility-statement" },

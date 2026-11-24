@@ -20,7 +20,7 @@ export function UpdatesContactSection() {
         <DefinitionRow term="Privacy Notice">
           For full details on how McLeod Family Office processes personal data, applicable legal
           bases, retention and your rights, read our{" "}
-          <Link href="/privacy" className={link}>
+          <Link href="/legal/privacy-notice" className={link}>
             Privacy Notice
           </Link>
           .
